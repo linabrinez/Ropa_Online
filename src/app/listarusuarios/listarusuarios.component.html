@@ -1,1 +1,36 @@
 <app-menu></app-menu>
+
+<div class="container">
+<div align="center"><h1>Lista de Productos</h1>
+
+<div *ngIf="hayproductos() else no_se_encontro_nada" >
+
+<table class="table table-responsive">
+    <thead>
+        <tr class="letrapequena">
+         <th>Codigo Id</th>
+         <th>Nombre</th>
+         <th>Precio</th>
+         <th>Fecha Expiracion</th>
+         <th>Procedimiento</th>
+        </tr>
+
+        <tr *ngFor="let contacto of datosformulario" class="letrapequena">
+         <td>{{contacto._id}}</td>
+         <td>{{contacto.name}}</td>
+         <td>{{contacto.price}}</td>
+         <td>{{contacto.expire_date}}</td>
+         <td><button (click)="baja_usuario(contacto._id)">Eliminar</button></td>
+        </tr>
+
+    </thead>
+
+</table>
+</div>
+
+<ng-template #no_se_encontro_nada>
+<h1><p>No se encontraron productos para listar</p></h1>
+</ng-template>
+
+</div>    
+</div>

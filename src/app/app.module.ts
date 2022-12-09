@@ -11,9 +11,10 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { PaginaNoEncontradaComponent } from './pagina-no-encontrada/pagina-no-encontrada.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ServicegeneralService } from './servicegeneral.service';
 import { ServiceformularioService } from './formulario/serviceformulario.service';
-
+import { ServicegeneralService } from './servicegeneral.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ServiciolistarService } from './listarusuarios/serviciolistar.service';
 
 @NgModule({
   declarations: [
@@ -31,11 +32,13 @@ import { ServiceformularioService } from './formulario/serviceformulario.service
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     ServicegeneralService,
     ServiceformularioService,
+    ServiciolistarService
   ],
   bootstrap: [AppComponent]
 })
