@@ -1,0 +1,17 @@
+<app-menu></app-menu>
+
+<form action="" class="form" [formGroup]="datosformulario">
+
+    <h4>{{titulo}}</h4>
+
+<p ><input type="text" name="name" formControlName="name" >Nombre</p>
+
+<!--<p ><input type="email" name="email" formControlName="email" >Email</p>
+-->
+<p ><input type="text" name="price" formControlName="price" >Price</p>
+
+<p ><input type="date" name="expire_date" formControlName="expire_date">Fecha Local</p>
+
+<button (click)="recibirdatos()">Enviar</button>
+
+</form>
