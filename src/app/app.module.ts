@@ -15,6 +15,9 @@ import { ServiceformularioService } from './formulario/serviceformulario.service
 import { ServicegeneralService } from './servicegeneral.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiciolistarService } from './listarusuarios/serviciolistar.service';
+import { LoginComponent } from './LoginUsuario/login/login.component';
+import { RegisterComponent } from './LoginUsuario/register/register.component';
+import { DashboardComponent } from './LoginUsuario/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,9 @@ import { ServiciolistarService } from './listarusuarios/serviciolistar.service';
     MenuComponent,
     HomeComponent,
     PaginaNoEncontradaComponent,
+    LoginComponent,
+    RegisterComponent,
+    DashboardComponent,
   
   ],
   imports: [
