@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ServicegeneralService } from './servicegeneral.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'grupo34webangular';
+  title = 'Malejand34webangular';
+
+  constructor(private loginprd:ServicegeneralService){
+
+  }
+  public Visualizarpaginaprincipal():boolean{
+    return this.loginprd.habilitarlogeo();
+
+  }
+  
 }
+
+
