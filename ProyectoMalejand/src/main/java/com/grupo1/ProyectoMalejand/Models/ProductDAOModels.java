@@ -1,7 +1,5 @@
 package com.grupo1.ProyectoMalejand.Models;
 
-import java.time.LocalDate;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -10,8 +8,8 @@ public class ProductDAOModels {
     @Id
     private String _id;
     private String name;
-    private Double price;
-    private LocalDate expire_date;
+    private Double precio;
+    private String descripcion;
 
     public ProductDAOModels() {
     }
@@ -32,20 +30,22 @@ public class ProductDAOModels {
         this.name = name;
     }
 
-    public Double getPrice() {
-        return price;
+    public Double getPrecio() {
+        return precio;
     }
 
-    public void setPrice(Double price) {
-        this.price = price;
+    public void setPrecio(Double precio) {
+        this.precio = precio;
     }
 
-    public LocalDate getExpire_date() {
-        return expire_date;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setExpire_date(LocalDate expire_date) {
-        this.expire_date = expire_date;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
+
+    
     
 }
