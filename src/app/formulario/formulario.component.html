@@ -1,0 +1,17 @@
+<app-menu></app-menu>
+
+<form action="" class="form" [formGroup]="datosformulario">
+
+    <h4>{{titulo}}</h4>
+
+    <p><input type="text" name="name" formControlName="name">Nombre de Prenda</p>
+
+    <!--<p ><input type="email" name="email" formControlName="email" >Email</p>
+-->
+    <p><input type="text" name="precio" formControlName="precio">Precio</p>
+
+    <p><input type="text" name="descripcion" formControlName="descripcion">descripcion</p>
+
+    <button (click)="recibirdatos()">Enviar</button>
+
+</form>
