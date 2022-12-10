@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,9 +15,9 @@ import { ServiceformularioService } from './formulario/serviceformulario.service
 import { ServicegeneralService } from './servicegeneral.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiciolistarService } from './listarusuarios/serviciolistar.service';
-import { LoginComponent } from './LoginUsuario/login/login.component';
-import { RegisterComponent } from './LoginUsuario/register/register.component';
-import { DashboardComponent } from './LoginUsuario/dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
+
+
 
 @NgModule({
   declarations: [
@@ -30,10 +30,9 @@ import { DashboardComponent } from './LoginUsuario/dashboard/dashboard.component
     HomeComponent,
     PaginaNoEncontradaComponent,
     LoginComponent,
-    RegisterComponent,
-    DashboardComponent,
   
   ],
+ 
   imports: [
     BrowserModule,
     AppRoutingModule,
