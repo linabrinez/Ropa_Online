@@ -13,7 +13,7 @@ declare var validar_precio:any;
 })
 export class FormularioComponent {
 
-  titulo="Formulario Registrar Prenda";
+  titulo="Formulario Registrar";
 
   datosformulario = new FormGroup({
     name: new FormControl(''),
@@ -47,7 +47,7 @@ export class FormularioComponent {
       if(rta == false){
       alert("Digite solo letras en el nombre");
       }else{
-      //alert("Esta bien escrito");
+      alert("Esta bien escrito");
       p = p + 1;
       }
       var rta = validar_precio(valor);

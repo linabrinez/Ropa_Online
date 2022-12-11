@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormularioComponent } from './formulario/formulario.component';
 import { HomeComponent } from './home/home.component';
-import { ListarusuariosComponent } from './listarproductos/listarproductos.component';
+import { ListarusuariosComponent } from './listarproductos/listarusuarios.component';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { ModificarusuariosComponent } from './modificarusuarios/modificarusuarios.component';

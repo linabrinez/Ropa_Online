@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormularioComponent } from './formulario/formulario.component';
-import { ListarusuariosComponent } from './listarproductos/listarproductos.component';
+import { ListarusuariosComponent } from './listarproductos/listarusuarios.component';
 import { ModificarusuariosComponent } from './modificarusuarios/modificarusuarios.component';
 import { EliminarusuariosComponent } from './eliminarusuarios/eliminarusuarios.component';
 import { MenuComponent } from './menu/menu.component';
@@ -19,6 +19,7 @@ import { LoginComponent } from './login/login.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +31,7 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,
     PaginaNoEncontradaComponent,
     LoginComponent,
+    
   
   ],
  
